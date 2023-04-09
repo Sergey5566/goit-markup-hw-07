@@ -5,3 +5,117 @@
         margin-right: auto;
     }
 }
+
+@media screen and (min-width: 768px) { /*-----768-----*/
+    .container{
+        width: 768px;
+    }
+
+/*-------------------------CAPTION--------------------------*/
+
+    .caption-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+}
+    .list-caption {
+        flex-basis: calc((100% - 1 * 24px) / 2);
+}
+    .section-subtitle{
+        text-align: start;
+}
+/*------------------------LIST_TEAMS-------------------------*/
+    .team-items{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+}
+/*-----------------------SECTION-CUSTOMERS---------------------*/
+    .customers-logo-box{
+        column-gap: 24px;
+        row-gap: 72px;
+}
+    .customers-block{
+        flex-basis: calc((100% - 3 * 24px) / 4);
+        width: 168px;
+}
+}
+
+@media screen and (min-width: 1200px) {   /*-----1200---------*/
+    .container {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+/*----------------------------CAPTION--------------------------*/
+    .caption-list{
+        gap: 24px;
+}
+    .list-caption {
+        width: calc((100% - 3 * 24px) / 4);
+}
+    .advantages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        background-color: var(--cloud-color);
+    }
+    .caption-list {
+        flex-wrap: nowrap;
+    }
+    .section-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        color: var(--grey-color);
+    }
+    .text-suptitle {
+        font-weight: 400;
+    }
+/*-------------------------MENU--------------------------*/
+    .menu {
+        display: block;
+        padding-bottom: 120px;
+}
+
+/*-------------------------LIST_TEAMS-------------------------*/
+    .list-teams{
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+    .list-teams>.container{
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .team-desc {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+}
+    .team-items {
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+/*-------------------------SECTION-CUSTOMERS------------------------*/
+    .section-customers{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers-logo-box {
+        gap: 24px;
+    }
+        .customers-block {
+        flex-basis: calc((100% - 5 * 24px) / 6);
+    }
+}

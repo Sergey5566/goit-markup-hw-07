@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
-    <!--<header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="nav_header">
                 <a class="logo link" href="./index.html">Web<span class="span">Studio</span></a>
@@ -29,7 +29,78 @@
             </ul>
             </address>
         </div>
-    </header> -->
+        <button class="mobile-menu-open" type="button" data-mobil-open>
+            <svg class="icon-burger" width="32" height="22">
+                <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu is-hidden" data-mobil>
+            <div class="container mobile-menu-container">
+                <button class="close-mobile-button" data-mobil-close type="button">
+                    <svg class="close-mobile-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <div class="mobile-thumb">
+                    <ul class="mobile-nav list">
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="soc-thumb">
+                        <address class="mobile-contacts">
+                            <ul class="mobile-contacts-list list">
+                                <li class="mobile-contacts-list-item">
+                                    <a class="mobile-contacts-list-item-link link tel" href="tel:+110001111111">+11 (000)
+                                        111-11-11</a>
+                                </li>
+                                <li class="mobile-contacts-list-item">
+                                    <a class="mobile-contacts-list-item-link link mail"
+                                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <ul class="mobile-soc-list list">
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
             <!--<section class="page">
                 <div class="container">
@@ -87,7 +158,7 @@
                     </ul>
                 </div>
             </section>
-            <!--<section class="menu">
+            <section class="menu">
                 <div class="container">
                     <h2 class="menu-title">What are we doing</h2>
                     <ul class="img-items list">
@@ -96,7 +167,7 @@
                         <li class="menu-img"><img src="./images/img_3.jpg" alt="mobile" width="360"></li>
                     </ul>
                 </div >
-            </section> -->
+            </section>
             <section class="list-teams">
                 <div class="container">  <!--teams-container-->
                     <h2 class="team-title">Our Team</h2>
@@ -248,7 +319,7 @@
                     </ul>
                 </div >
             </section>
-            <section class="section-paddings">
+            <section class="section-customers">
                 <div class="container">
                     <h2 class="customers-title">Customers</h2>
                     <ul class="customers-logo-box list">
