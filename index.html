@@ -24,16 +24,16 @@
             </nav>
             <address class="adress-items">
             <ul class="adress-menu list">
-                <li><a class="adress link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="adress link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="adress-list"><a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="adress-list"><a class="adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
             </address>
+            <button class="mobile-menu-open" type="button" data-mobil-open>
+                <svg class="icon-burger" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
-        <button class="mobile-menu-open" type="button" data-mobil-open>
-            <svg class="icon-burger" width="32" height="22">
-                <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
-            </svg>
-        </button>
         <div class="mobile-menu is-hidden" data-mobil>
             <div class="container mobile-menu-container">
                 <button class="close-mobile-button" data-mobil-close type="button">
@@ -70,28 +70,28 @@
                             <li class="mobile-soc-list-item">
                                 <a class="mobile-soc-link link" href="#">
                                     <svg class="mobile-soc-icon">
-                                        <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="mobile-soc-list-item">
                                 <a class="mobile-soc-link link" href="#">
                                     <svg class="mobile-soc-icon">
-                                        <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="mobile-soc-list-item">
                                 <a class="mobile-soc-link link" href="#">
                                     <svg class="mobile-soc-icon">
-                                        <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="mobile-soc-list-item">
                                 <a class="mobile-soc-link link" href="#">
                                     <svg class="mobile-soc-icon">
-                                        <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -102,12 +102,12 @@
         </div>
     </header>
     <main>
-            <!--<section class="page">
+            <section class="page">
                 <div class="container">
                     <h1 class="title">Effective Solutions for Your Business</h1>
                     <button class="button" data-modal-open type="button">Order Service</button>
                 </div >
-            </section> -->
+            </section>
             <section class="caption">
                 <div class="container">
                     <h2 hidden class="invisible-text">list</h2>
@@ -369,7 +369,7 @@
                 </div>
             </section>
     </main>
-            <!--<footer class="footer">
+            <footer class="footer">
                 <div class="container footer-container">
                     <div class="footer-text-logo">
                         <a class="logo link" href="./index.html">Web<span class="span_footer">Studio</span></a>
@@ -409,25 +409,23 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="container3">
-                        <form class="form-footer">
-                            <p class="subscibe-title">Subscribe</p>
-                            <div class="form-div">
-                                <label class="label-sub">
-                                    <input class="input-text" type="email" name="email" id="email" autocomplete="on" placeholder="E-mail" />
-                                </label>
-                                <button type="submit" class="btn-footer">
-                                    <span class="btn-submit">Subscribe</span>
-                                    <svg class="button-item" width="24" height="24">
-                                        <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                                    </svg>
+                    <div class="footer-form-container">
+                        <p class="form-container-text">Subscribe</p>
+                        <form class="footer-form">
+                            <input class="footer-form-input" name="user_email" type="email" placeholder="E-mail" required="">
+                            <div class="footer-form-submit-area">
+                                <button class="footer-form-submite" type="submit">
+                                    Subscribe
                                 </button>
+                                <svg class="footer-form-submit-icon">
+                                    <use href="./images/symbol-defs.svg#icon-telegramm"></use>
+                                </svg>
                             </div>
                         </form>
                     </div>
                 </div>
-            </footer> -->
-            <!--<div class="backdrop is-hidden" data-modal>
+            </footer>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-close" data-modal-close>
                         <svg width="8" height="8" class="modal-close-icon">
@@ -484,7 +482,8 @@
                         </div>
                     </form>
                 </div>
-            </div> -->
+            </div>
             <script src="./js/model.js"></script>
+            <script src="./js/mobile-model.js"></script>
 </body>
 </html>
