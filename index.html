@@ -169,11 +169,11 @@
                 </div >
             </section>
             <section class="list-teams">
-                <div class="container">  <!--teams-container-->
+                <div class="container">
                     <h2 class="team-title">Our Team</h2>
                     <ul class="team-items list">
                         <li class="team-desc">
-                            <img src="./images/img_4.jpg" alt="foto" width="264">
+                            <img class="team-item-img" src="./images/img_4.jpg" alt="foto" width="264">
                             <div class="team-pl">
                                 <h3 class="team-name">Mark Guerrero</h3>
                                 <p class="team-text">Product Designer</p>
@@ -206,7 +206,7 @@
                             </div >
                         </li>
                         <li class="team-desc">
-                            <img src="./images/img_5.jpg" alt="foto" width="264">
+                            <img class="team-item-img" src="./images/img_5.jpg" alt="foto" width="264">
                             <div class="team-pl">
                                 <h3 class="team-name">Tom Ford</h3>
                                 <p class="team-text">Frontend Developer</p>
@@ -243,7 +243,7 @@
                             </div >
                         </li>
                         <li class="team-desc">
-                            <img src="./images/img_6.jpg" alt="foto" width="264">
+                            <img class="team-item-img" src="./images/img_6.jpg" alt="foto" width="264">
                             <div class="team-pl">
                                 <h3 class="team-name">Camila Garcia</h3>
                                 <p class="team-text">Marketing</p>
@@ -280,7 +280,7 @@
                             </div >
                         </li>
                         <li class="team-desc">
-                            <img src="./images/img_7.jpg" alt="foto" width="264">
+                            <img class="team-item-img" src="./images/img_7.jpg" alt="foto" width="264">
                             <div class="team-pl">
                                 <h3 class="team-name">Daniel Wilson</h3>
                                 <p class="team-text">UI Designer</p>
@@ -462,21 +462,13 @@
                             </div>
                             <div class="input-wrap">
                                 <label class="modal-label-text" for="comment">Comment</label>
-                                <textarea 
-                                name="comment" 
-                                id="comment" 
-                                class="modal-textarea"
-                                placeholder="Text input"
-                                ></textarea>
+                                <textarea name="comment" id="comment" class="modal-textarea" placeholder="Text input"></textarea>
                             </div>
                             <div class="modal-field">
-                                <input class="modal-check visually-hidden"
-                                type="checkbox"
-                                id="privacy"
-                                name="user-privacy"
-                                value="true"
-                                />
-                                <label for="privacy" class="check-text">I accept the terms and conditions of the <a href="" class="check-text-link">Privacy Policy</a></label>
+                                <input class="modal-check visually-hidden" type="checkbox" id="privacy" name="user-privacy"
+                                    value="true" />
+                                <label for="privacy" class="check-text">I accept the terms and conditions of the <a href=""
+                                        class="check-text-link">Privacy Policy</a></label>
                                 <button class="modal-btn-send" type="submit">Send</button>
                             </div>
                         </div>
