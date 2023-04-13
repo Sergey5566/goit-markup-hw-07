@@ -773,7 +773,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--grey-color);
+    background-color: rgba(46, 47, 66, 0.4);
     transition: opacity var(--cubic), visibility var(--cubic);
     opacity: 1;
 }
