@@ -1,8 +1,6 @@
 @media screen and (min-width: 480px) {
     .container {
         width: 428px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -44,7 +42,7 @@
         content: '';
         display: block;
         position: relative;
-        top: 28px;
+        top: 27px;
         width: 100%;
         height: 4px;
         border-radius: 2px;
@@ -79,6 +77,34 @@
         letter-spacing: 0.02em;
         transition: color var(--cubic);
     }
+        .adress-link:hover,
+        .adress-link:focus {
+            color: var(--ocean-color);
+        }
+
+
+/*-------------------------PAGE--------------------------*/
+
+.page{
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Dark-bg-tab-min.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .page {
+        background-image: url('../images/Dark-bg-tab2x-min.jpg');
+    }
+}
+
+.title {
+    font-size: 56px;
+    margin-bottom: 36px;
+    max-width: 496px;
+    text-transform: none;
+}
 
 /*-------------------------CAPTION--------------------------*/
 
@@ -145,14 +171,40 @@
 @media screen and (min-width: 1200px) {   /*-----1200---------*/
     .container {
         width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
 }
 /*-------------------------HEADER--------------------------*/
 .adress-menu {
     display: flex;
     margin: 0 auto;
     gap: 40px;
+}
+.adress:hover,
+.adress:focus {
+    color: var(--ocean-color);
+}
+
+/*-------------------------PAGE--------------------------*/
+
+.page {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office\ 1-min.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .page {
+        background-image: url('../images/people-office\ 2x-min.jpg');
+    }
+}
+
+.title {
+    font-size: 56px;
+    margin-bottom: 48px;
+    text-transform: none;
 }
 
 
