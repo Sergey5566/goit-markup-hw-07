@@ -57,11 +57,8 @@ img{
 }
 
 .container {
-    width: 428px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .visually-hidden {
@@ -453,6 +450,10 @@ img{
 .team-desc:hover .team-cover-text {
     transform: translateY(0);
 }
+.team-item-img{
+    width: 100%;
+    height: 100%;
+}
 
 .team-pl {
     padding: 32px 0;
@@ -483,6 +484,7 @@ img{
     display: flex;
     justify-content: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .team-soc-item {
