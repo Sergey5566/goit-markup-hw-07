@@ -44,7 +44,7 @@
                 <div class="mobile-thumb">
                     <ul class="mobile-nav list">
                         <li class="mobile-nav-item">
-                            <a class="mobile-nav-link link" href="./index.html">Studio</a>
+                            <a class="mobile-nav-link link link-menu-active" href="./index.html">Studio</a>
                         </li>
                         <li class="mobile-nav-item">
                             <a class="mobile-nav-link link" href="">Portfolio</a>
@@ -439,17 +439,19 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-form-container">
-                        <p class="form-container-text">Subscribe</p>
-                        <form class="footer-form">
-                            <input class="footer-form-input" name="user_email" type="email" placeholder="E-mail" required="">
-                            <div class="footer-form-submit-area">
-                                <button class="footer-form-submite" type="submit">
-                                    Subscribe
+                    <div class="container3">
+                        <form class="form-footer">
+                            <p class="subscibe-title">Subscribe</p>
+                            <div class="form-div">
+                                <label class="label-sub">
+                                    <input class="input-text" type="email" name="email" id="email" autocomplete="on" placeholder="E-mail" />
+                                </label>
+                                <button type="submit" class="btn-footer">
+                                    <span class="btn-submit">Subscribe</span>
+                                    <svg class="button-item" width="24" height="24">
+                                        <use href="./images/symbol-defs.svg#icon-telegramm"></use>
+                                    </svg>
                                 </button>
-                                <svg class="footer-form-submit-icon">
-                                    <use href="./images/symbol-defs.svg#icon-telegramm"></use>
-                                </svg>
                             </div>
                         </form>
                     </div>
