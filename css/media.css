@@ -108,9 +108,9 @@
         display: block;
     }
 
-    /*.adress-list:not(:last-child){
+    .adress-list:not(:last-child){
        margin-bottom: 12px;
-    }*/
+    }
 
     .adress-link {
        color: var(--slate-color);
