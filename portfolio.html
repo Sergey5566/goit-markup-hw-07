@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -26,10 +27,83 @@
             </nav>
             <address class="adress-items">
                 <ul class="adress-menu list">
-                    <li><a class="adress link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="adress link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="adress-list"><a class="adress-link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="adress-list"><a class="adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
                 </ul>
             </address>
+            <button class="mobile-menu-open" type="button" data-mobil-open>
+                <svg class="icon-burger" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" data-mobil>
+            <div class="container mobile-menu-container">
+                <button class="close-mobile-button" data-mobil-close type="button">
+                    <svg class="close-mobile-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <div class="mobile-thumb">
+                    <ul class="mobile-nav list">
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link link-menu-active" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="mobile-nav-link link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="soc-thumb">
+                        <address class="mobile-contacts">
+                            <ul class="mobile-contacts-list list">
+                                <li class="mobile-contacts-list-item">
+                                    <a class="mobile-contacts-list-item-link link tel" href="tel:+110001111111">+11 (000)
+                                        111-11-11</a>
+                                </li>
+                                <li class="mobile-contacts-list-item">
+                                    <a class="mobile-contacts-list-item-link link mail"
+                                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <ul class="mobile-soc-list list">
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-list-item">
+                                <a class="mobile-soc-link link" href="#">
+                                    <svg class="mobile-soc-icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -252,23 +326,23 @@
                     </ul>
                 </div>
                 <div class="container3">
+                    <p class="subscibe-title">Subscribe</p>
                     <form class="form-footer">
-                        <p class="subscibe-title">Subscribe</p>
                         <div class="form-div">
                             <label class="label-sub">
-                                <input class="input-text" type="email" name="email" id="email" autocomplete="on" placeholder="E-mail" />
+                                <input class="input-text" type="email" name="email" id="email" autocomplete="on"
+                                    placeholder="E-mail" />
                             </label>
                             <button type="submit" class="btn-footer">
-                                <b class="btn-submit">Subscribe</b>
+                                <span class="btn-submit">Subscribe</span>
                                 <svg class="button-item" width="24" height="24">
-                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                    <use href="./images/symbol-defs.svg#icon-telegramm"></use>
                                 </svg>
                             </button>
                         </div>
                     </form>
                 </div>
             </div>
-        
         </footer>
 </body>
 
