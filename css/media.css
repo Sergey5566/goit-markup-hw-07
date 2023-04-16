@@ -124,6 +124,9 @@
         .adress-link:focus {
             color: var(--ocean-color);
         }
+    .adress-list:not(:last-child){
+       margin-bottom: 12px;
+    }
 
 
 /*-------------------------PAGE--------------------------*/
